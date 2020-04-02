@@ -8,12 +8,12 @@ namespace si2.bll.Dtos.Requests.Simplecohort
     public class CreateSimplecohortDto
     {
         [Required]
-        public string[] registrationRequirements { get; set; }
+        public string registrationRequirements { get; set; }
 
         [Required]
-        public string[] graduationRequirements { get; set; }
+        public string graduationRequirements { get; set; }
 
         [Required]
-        public string[] transferRequirements { get; set; }
+        public string transferRequirements { get; set; }
     }
 }

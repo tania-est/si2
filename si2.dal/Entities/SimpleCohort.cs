@@ -15,11 +15,11 @@ namespace si2.dal.Entities
         //since the Requirement may be changed from being an interface
 
         [Required]
-        public string[] registrationRequirements { get; set; }
+        public string registrationRequirements { get; set; }
         [Required]
-        public string[] graduationRequirements { get; set; }
+        public string graduationRequirements { get; set; }
         [Required]
-        public string[] transferRequirements { get; set; }
+        public string transferRequirements { get; set; }
 
         [Required]
         public SimplecohortStatus Status { get; set; }

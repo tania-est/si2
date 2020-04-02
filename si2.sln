@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "si2.api", "si2.api\si2.api.csproj", "{5157361A-1EB4-44D7-8880-0697E81943B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "si2.api", "si2.api\si2.api.csproj", "{5157361A-1EB4-44D7-8880-0697E81943B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "si2.bll", "si2.bll\si2.bll.csproj", "{779B17B5-2B66-4B2C-BFF8-AF28832C0C5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "si2.bll", "si2.bll\si2.bll.csproj", "{779B17B5-2B66-4B2C-BFF8-AF28832C0C5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "si2.dal", "si2.dal\si2.dal.csproj", "{5856004A-1482-4D33-8E8F-FBBF69B91AE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "si2.dal", "si2.dal\si2.dal.csproj", "{5856004A-1482-4D33-8E8F-FBBF69B91AE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "si2.common", "si2.common\si2.common.csproj", "{C69376EF-5775-4750-B988-F68FB8CCCE54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "si2.common", "si2.common\si2.common.csproj", "{C69376EF-5775-4750-B988-F68FB8CCCE54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "si2.tests", "si2.tests\si2.tests.csproj", "{9F08B8D3-3A46-49CD-8FDA-5AA199732F81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "si2.tests", "si2.tests\si2.tests.csproj", "{9F08B8D3-3A46-49CD-8FDA-5AA199732F81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

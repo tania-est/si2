@@ -17,5 +17,12 @@ namespace si2.common
             Ongoing = 2,
             Completed = 3
         }
+
+        public enum SimplecohortStatus
+        {
+            Started = 1,
+            Ongoing = 2,
+            Completed = 3
+        }
     }
 }

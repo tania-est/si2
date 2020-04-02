@@ -20,7 +20,10 @@ namespace si2.dal.Context
         public DbSet<AuditEntryProperty> AuditEntryProperties { get; set; }
 
         public DbSet<Dataflow> Dataflows { get; set; }
-        public DbSet<Vehicle> Vehicles { get; set; }
+
+		public DbSet<Simplecohort> Simplecohorts { get; set; }
+
+		public DbSet<Vehicle> Vehicles { get; set; }
 
         public Si2DbContext(DbContextOptions<Si2DbContext> options) : base(options)
         {

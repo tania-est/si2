@@ -34,7 +34,8 @@ namespace si2.api.Controllers
         }
 
         [HttpPost]
-        [Authorize(AuthenticationSchemes = "Bearer")]
+        //TE - Commented the Authorization for testing Postman
+        //[Authorize(AuthenticationSchemes = "Bearer")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(SimplecohortDto))]
         public async Task<ActionResult> CreateSimplecohort([FromBody] CreateSimplecohortDto createSimplecohortDto, CancellationToken ct)

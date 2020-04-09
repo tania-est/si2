@@ -34,7 +34,7 @@ namespace si2.bll.Helpers.PagedList
         public static async Task<PagedList<T>> CreateAsync(IQueryable<T> source, int pageNumber, int pageSize, CancellationToken ct)
         { 
             var count = source.Count();
-            var items = await source.Skip((pageNumber - 1) + pageSize).Take(pageSize).ToListAsync(ct);
+            var items = await source.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToListAsync(ct);
             return new PagedList<T>(items, count, pageNumber, pageSize);
         }
     }

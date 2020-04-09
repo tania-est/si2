@@ -34,8 +34,7 @@ namespace si2.api.Controllers
         }
 
         [HttpPost]
-        //TE - Commented the Authorization for testing Postman
-        //[Authorize(AuthenticationSchemes = "Bearer")]
+        [Authorize(AuthenticationSchemes = "Bearer")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(SimplecohortDto))]
         public async Task<ActionResult> CreateSimplecohort([FromBody] CreateSimplecohortDto createSimplecohortDto, CancellationToken ct)
@@ -58,20 +57,17 @@ namespace si2.api.Controllers
         }
 
         [HttpGet("{id}", Name = "GetSimplecohort")]
-        //TE - Commented the Authorization for testing Postman
-        //[Authorize(AuthenticationSchemes = "Bearer")]
+        [Authorize(AuthenticationSchemes = "Bearer")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SimplecohortDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult> GetSimplecohort(Guid id, CancellationToken ct)
         {
-            //TE - Commented the below for testing Postman
-            /*var simplecohortDto = await _simplecohortService.GetSimplecohortByIdAsync(id, ct);
+            var simplecohortDto = await _simplecohortService.GetSimplecohortByIdAsync(id, ct);
 
             if (simplecohortDto == null)
                 return NotFound();
 
-            return Ok(simplecohortDto);*/
-            return Ok("Reached");
+            return Ok(simplecohortDto);
         }
 
         [HttpGet(Name = "GetSimplecohorts")]

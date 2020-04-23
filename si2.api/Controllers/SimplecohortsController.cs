@@ -39,6 +39,16 @@ namespace si2.api.Controllers
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(SimplecohortDto))]
         public async Task<ActionResult> CreateSimplecohort([FromBody] CreateSimplecohortDto createSimplecohortDto, CancellationToken ct)
         {
+            // Check that the 'createSimplecohortDto' object parameter can be de-serialised to a CreateSimplecohortDto.
+            if (createSimplecohortDto == null)
+            {
+                var message = "Could not de-serialise the request body to an CreateSimplecohortDto object";
+                _logger.LogError(message);
+
+                // Return an error 400.
+                return BadRequest(message);
+            }
+
             var simplecohortToReturn = await _simplecohortService.CreateSimplecohortAsync(createSimplecohortDto, ct);
             if (simplecohortToReturn == null)
                 return BadRequest();

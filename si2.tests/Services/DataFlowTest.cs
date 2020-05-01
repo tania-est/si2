@@ -12,10 +12,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using static si2.common.Enums;
 
-namespace si2.tests.Helpers
+namespace si2.tests.Services
 {
     [TestFixture]
-    class DataFlowTest
+    public class DataFlowTest
     {
         private readonly Mock<IUnitOfWork> _mockUnitOfWork;
         private readonly Mock<ILogger<DataflowService>> _mockLogger;
@@ -56,7 +56,8 @@ namespace si2.tests.Helpers
         public void GetDataflowByIdAsync_WhenMatching()
         {
             // Arrange
-            _mockUnitOfWork.Setup(_mockUnitOfWork => _mockUnitOfWork.Dataflows.GetAsync(mockDataFlowDto.Id, It.IsAny<CancellationToken>())).Returns(Task.FromResult(mockDataFlow));
+            _mockUnitOfWork.Setup(_mockUnitOfWork => _mockUnitOfWork.Dataflows.GetAsync(mockDataFlowDto.Id, It.IsAny<CancellationToken>()))
+                .Returns(Task.FromResult(mockDataFlow));
 
             // Act
             var expected = _dataFlowService.GetDataflowByIdAsync(mockDataFlowDto.Id, It.IsAny<CancellationToken>()).Result;

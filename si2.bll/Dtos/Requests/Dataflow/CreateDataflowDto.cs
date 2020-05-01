@@ -8,6 +8,9 @@ namespace si2.bll.Dtos.Requests.Dataflow
     public class CreateDataflowDto
     {
         [Required]
+        public string Title { get; set; }
+
+        [Required]
         public string Name { get; set; }
 
         [Required]

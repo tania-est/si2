@@ -14,7 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\si2.api\si2.api.csproj" />
     <ProjectReference Include="..\si2.bll\si2.bll.csproj" />
   </ItemGroup>
 

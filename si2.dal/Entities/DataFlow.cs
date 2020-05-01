@@ -12,6 +12,8 @@ namespace si2.dal.Entities
     public class Dataflow : Si2BaseDataEntity<Guid>, IAuditable
     {
         [Required]
+        public string Title { get; set; }
+        [Required]
         public string Name { get; set; }
         [Required]
         public string Tag { get; set; }
